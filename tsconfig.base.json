@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@frontify/amazing-button-click-animation": [
+        "libs/amazing-button-click-animation/src/index.ts"
+      ],
       "@frontify/cursor": ["libs/cursor/src/index.ts"]
     }
   },

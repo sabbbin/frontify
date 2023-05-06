@@ -11,7 +11,23 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'fade-out': {
+          from: { opacity: 0, transform: 'none' },
+          to: { opacity: 1, transform: 'translateY(-30px)' },
+        },
+
+        'fade-in': {
+          from: { opacity: 1, transform: 'translateY(-30px)' },
+          to: { opacity: 0, transform: 'translateY(0px)' },
+        },
+      },
+      animation: {
+        'fade-out': 'fade-out var(--animation-time) 0ms ease forwards',
+        'fade-in': 'fade-in 10ms ease forwards',
+      },
+    },
   },
   plugins: [],
 };
