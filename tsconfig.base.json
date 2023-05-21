@@ -18,6 +18,7 @@
       "@frontify/amazing-button-click-animation": [
         "libs/amazing-button-click-animation/src/index.ts"
       ],
+      "@frontify/awesome-amieslider": ["libs/awesome-amieslider/src/index.ts"],
       "@frontify/cursor": ["libs/cursor/src/index.ts"]
     }
   },
