@@ -1,4 +1,37 @@
+.app{
+    transition: width, height , margin-top , linear 100ms;
+}
+
+.app:hover{
+    width:90px;
+    height:90px;
+    margin-top: -30px;
+}
+
+.app {
+    width:60px;
+    height:60px;
+    position: relative;
+}
+
+.app:hover+.app{
+    
+    height:calc(80px + var(--dock-offset-right,0px));
+    width:calc(80px + var(--dock-offset-right,0px));
+    margin-top:calc(-20px + var(--dock-offset-right,0px)*-1)
+}
+
+.app:has(+.app:hover){
+   
+    height:calc(80px + var(--dock-offset-left,0px));
+    width:calc(80px + var(--dock-offset-left,0px));
+    margin-top:calc(-20px + var(--dock-offset-left,0px)*-1)
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+
