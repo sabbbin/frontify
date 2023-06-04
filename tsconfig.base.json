@@ -20,7 +20,8 @@
       ],
       "@frontify/awesome-amieslider": ["libs/awesome-amieslider/src/index.ts"],
       "@frontify/cursor": ["libs/cursor/src/index.ts"],
-      "@frontify/mac-sidebar": ["libs/mac-sidebar/src/index.ts"]
+      "@frontify/mac-sidebar": ["libs/mac-sidebar/src/index.ts"],
+      "@frontify/tooltips-animation": ["libs/tooltips-animation/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
