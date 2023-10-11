@@ -7,6 +7,7 @@ import { AmazingButtonClickAnimation } from '@frontify/amazing-button-click-anim
 import { AwesomeAmieslider } from '@frontify/awesome-amieslider';
 import { MacSidebar } from '@frontify/mac-sidebar';
 import { TooltipsAnimation } from '@frontify/tooltips-animation';
+import { CssMask } from '@frontify/css-mask';
 
 export function App() {
   return (
@@ -16,7 +17,9 @@ export function App() {
     //   <Cursor />
     //   <AmazingButtonClickAnimation />
     // </div>
-    <TooltipsAnimation />
+    // <TooltipsAnimation />
+
+    <CssMask />
   );
 }
 
